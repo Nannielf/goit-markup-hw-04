@@ -105,6 +105,7 @@ button {
 .header {
     width: 100%;
     position: fixed;
+    z-index: 1;
     border-bottom: 1px solid var(--modal-back-color);
     background: var(--white-back-color);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -411,7 +412,6 @@ background-color: var(--pressed-color);
     align-items: baseline;
 }
 .footer-logo-block {
-margin-right: 120px
 }
 .footer .logo {
     display: inline-block;
@@ -520,14 +520,11 @@ margin-right: 120px
 .overlay-block {
 position: relative;
 overflow: hidden;
-
 }
 .cards-block {
     padding: 32px 16px;
     border: 1px solid var(--accent-color);
     border-top: none;
-}
-.cards img {
 }
 .cards-list {
     background: var(--white-back-color);
@@ -612,6 +609,7 @@ overflow: hidden;
 
 .modal-btn {
     position: absolute;
+    z-index: 10;
     top: 24px;
     right: 24px;
     width: 24px;
